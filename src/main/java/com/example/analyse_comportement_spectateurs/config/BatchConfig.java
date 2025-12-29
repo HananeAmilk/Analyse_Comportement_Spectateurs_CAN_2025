@@ -72,13 +72,13 @@ public class BatchConfig {
                 .build();
     }
 
-    @Bean
-    public Job jsonJob() {
-        return new JobBuilder("jsonJob", jobRepository)
-                .incrementer(new RunIdIncrementer())
-                .start(processJsonStep())
-                .build();
-    }
+//    @Bean
+//    public Job jsonJob() {
+//        return new JobBuilder("jsonJob", jobRepository)
+//                .incrementer(new RunIdIncrementer())
+//                .start(processJsonStep())
+//                .build();
+//    }
 
 //    @Bean
 //    public Job xmlJob() {
@@ -88,12 +88,12 @@ public class BatchConfig {
 //                .build();
 //    }
 
-//    @Bean
-//    public Job spectatorAnalysisJob() {
-//        return new JobBuilder("spectatorAnalysisJob", jobRepository)
-//                .incrementer(new RunIdIncrementer())
-//                .start(processJsonStep())
-//                .next(processXmlStep())
-//                .build();
-//    }
+    @Bean
+    public Job spectatorAnalysisJob() {
+        return new JobBuilder("spectatorAnalysisJob", jobRepository)
+                .incrementer(new RunIdIncrementer())
+                .start(processJsonStep())
+                .next(processXmlStep())
+                .build();
+    }
 }

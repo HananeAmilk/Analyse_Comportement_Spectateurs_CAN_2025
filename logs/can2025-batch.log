@@ -1567,3 +1567,930 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 2025-12-29 23:47:16 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-12-29 23:47:16 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2025-12-29 23:47:16 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-29 23:49:34 [restartedMain] INFO  c.e.a.AnalyseComportementSpectateursCan2025Application - Starting AnalyseComportementSpectateursCan2025Application using Java 21.0.1 with PID 14056 (H:\apps\IdeaProjects\analyse_comportement_spectateurs\target\classes started by lenovo in H:\apps\IdeaProjects\analyse_comportement_spectateurs)
+2025-12-29 23:49:34 [restartedMain] INFO  c.e.a.AnalyseComportementSpectateursCan2025Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-29 23:49:34 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-29 23:49:37 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-29 23:49:37 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 167 ms. Found 3 JPA repository interfaces.
+2025-12-29 23:49:38 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:49:38 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:49:38 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$PooledDataSourceConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$PooledDataSourceConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:49:38 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jdbcConnectionDetails' of type [org.springframework.boot.autoconfigure.jdbc.PropertiesJdbcConnectionDetails] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:49:38 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:49:38 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.jpa-org.springframework.boot.autoconfigure.orm.jpa.JpaProperties' of type [org.springframework.boot.autoconfigure.orm.jpa.JpaProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:49:38 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.jpa.hibernate-org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties' of type [org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:49:38 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:49:38 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'hikariPoolDataSourceMetadataProvider' of type [org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration$$Lambda/0x000001798235f130] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:49:38 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration' of type [org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:49:38 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:49:38 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'transactionExecutionListeners' of type [org.springframework.boot.autoconfigure.transaction.ExecutionListenersTransactionManagerCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:49:38 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties' of type [org.springframework.boot.autoconfigure.transaction.TransactionProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:49:38 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'platformTransactionManagerCustomizers' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:49:38 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.sql.init.DataSourceInitializationConfiguration' of type [org.springframework.boot.autoconfigure.sql.init.DataSourceInitializationConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:49:38 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.sql.init-org.springframework.boot.autoconfigure.sql.init.SqlInitializationProperties' of type [org.springframework.boot.autoconfigure.sql.init.SqlInitializationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:49:38 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-29 23:49:38 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@655ae9b1
+2025-12-29 23:49:38 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-29 23:49:38 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSourceScriptDatabaseInitializer' of type [org.springframework.boot.autoconfigure.sql.init.SqlDataSourceScriptDatabaseInitializer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:49:38 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$DataSourceInitializerConfiguration' of type [org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$DataSourceInitializerConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:49:38 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.batch-org.springframework.boot.autoconfigure.batch.BatchProperties' of type [org.springframework.boot.autoconfigure.batch.BatchProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:49:39 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'batchDataSourceInitializer' of type [org.springframework.boot.autoconfigure.batch.BatchDataSourceScriptDatabaseInitializer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:49:39 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration' of type [org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:49:39 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'inMemoryDatabaseShutdownExecutor' of type [org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration$NonEmbeddedInMemoryDatabaseShutdownExecutor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:49:39 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jpaVendorAdapter' of type [org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:49:39 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'entityManagerFactoryBuilder' of type [org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:49:39 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'persistenceManagedTypes' of type [org.springframework.orm.jpa.persistenceunit.SimplePersistenceManagedTypes] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:49:39 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-29 23:49:39 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-12-29 23:49:39 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-29 23:49:39 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-29 23:49:39 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-29 23:49:39 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-12-29 23:49:42 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-29 23:49:42 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-29 23:49:42 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'entityManagerFactory' of type [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:49:42 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'entityManagerFactory' of type [jdk.proxy4.$Proxy98] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:49:42 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'transactionManager' of type [org.springframework.orm.jpa.JpaTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:49:42 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration' of type [org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [jobRegistryBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-12-29 23:49:42 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-29 23:49:44 [restartedMain] DEBUG o.s.b.c.c.s.JobRegistryBeanPostProcessor - Registering job: spectatorAnalysisJob
+2025-12-29 23:49:44 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-29 23:49:44 [restartedMain] INFO  c.e.a.AnalyseComportementSpectateursCan2025Application - Started AnalyseComportementSpectateursCan2025Application in 12.164 seconds (process running for 15.326)
+2025-12-29 23:49:44 [restartedMain] INFO  o.s.b.a.b.JobLauncherApplicationRunner - Running default command line with: []
+2025-12-29 23:49:44 [restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [SimpleJob: [name=spectatorAnalysisJob]] launched with the following parameters: [{}]
+2025-12-29 23:49:44 [restartedMain] DEBUG o.s.batch.core.job.AbstractJob - Job execution starting: JobExecution: id=13, version=0, startTime=null, endTime=null, lastUpdated=2025-12-29T23:49:44.722948, status=STARTING, exitStatus=exitCode=UNKNOWN;exitDescription=, job=[JobInstance: id=1, version=0, Job=[spectatorAnalysisJob]], jobParameters=[{}]
+2025-12-29 23:49:44 [restartedMain] INFO  o.s.batch.core.job.SimpleStepHandler - Step already complete or not restartable, so no action to execute: StepExecution: id=10, version=3, name=processJsonStep, status=COMPLETED, exitStatus=COMPLETED, readCount=0, filterCount=0, writeCount=0 readSkipCount=1, writeSkipCount=0, processSkipCount=0, commitCount=1, rollbackCount=0, exitDescription=
+2025-12-29 23:49:44 [restartedMain] INFO  o.s.batch.core.job.SimpleStepHandler - Executing step: [processXmlStep]
+2025-12-29 23:49:44 [restartedMain] DEBUG o.s.batch.core.step.AbstractStep - Executing: id=14
+2025-12-29 23:49:44 [restartedMain] DEBUG o.s.b.repeat.support.RepeatTemplate - Starting repeat context.
+2025-12-29 23:49:44 [restartedMain] DEBUG o.s.b.repeat.support.RepeatTemplate - Repeat operation about to start at count=1
+2025-12-29 23:49:44 [restartedMain] DEBUG o.s.b.c.s.c.StepContextRepeatCallback - Preparing chunk execution for StepContext: org.springframework.batch.core.scope.context.StepContext@20ef9237
+2025-12-29 23:49:44 [restartedMain] DEBUG o.s.b.c.s.c.StepContextRepeatCallback - Chunk execution starting: queue size=0
+2025-12-29 23:49:44 [restartedMain] DEBUG o.s.b.repeat.support.RepeatTemplate - Starting repeat context.
+2025-12-29 23:49:44 [restartedMain] DEBUG o.s.b.repeat.support.RepeatTemplate - Repeat operation about to start at count=1
+2025-12-29 23:49:45 [restartedMain] INFO  o.g.jaxb.core.v2.ClassFactory - No default constructor found on class java.time.LocalDateTime
+java.lang.NoSuchMethodException: java.time.LocalDateTime.<init>()
+	at java.base/java.lang.Class.getConstructor0(Class.java:3761)
+	at java.base/java.lang.Class.getDeclaredConstructor(Class.java:2930)
+	at org.glassfish.jaxb.core.v2.ClassFactory.tryGetDeclaredConstructor(ClassFactory.java:109)
+	at org.glassfish.jaxb.core.v2.ClassFactory.create0(ClassFactory.java:78)
+	at org.glassfish.jaxb.runtime.v2.runtime.ClassBeanInfoImpl.createInstance(ClassBeanInfoImpl.java:255)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallingContext.createInstance(UnmarshallingContext.java:655)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.StructureLoader.startElement(StructureLoader.java:156)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallingContext._startElement(UnmarshallingContext.java:530)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallingContext.startElement(UnmarshallingContext.java:509)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.InterningXmlVisitor.startElement(InterningXmlVisitor.java:49)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.StAXEventConnector.handleStartElement(StAXEventConnector.java:228)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.StAXEventConnector.bridge(StAXEventConnector.java:95)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:421)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(UnmarshallerImpl.java:396)
+	at org.springframework.oxm.jaxb.Jaxb2Marshaller.unmarshalStaxSource(Jaxb2Marshaller.java:855)
+	at org.springframework.oxm.jaxb.Jaxb2Marshaller.unmarshal(Jaxb2Marshaller.java:804)
+	at org.springframework.oxm.jaxb.Jaxb2Marshaller.unmarshal(Jaxb2Marshaller.java:791)
+	at org.springframework.batch.item.xml.StaxEventItemReader.doRead(StaxEventItemReader.java:279)
+	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.read(AbstractItemCountingItemStreamItemReader.java:93)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.doRead(SimpleChunkProvider.java:108)
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProvider.read(FaultTolerantChunkProvider.java:86)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.lambda$provide$0(SimpleChunkProvider.java:132)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.provide(SimpleChunkProvider.java:127)
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:69)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:388)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:312)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:255)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:240)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:229)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:153)
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:418)
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:132)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:317)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:157)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:148)
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher.run(TaskExecutorJobLauncher.java:59)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.execute(JobLauncherApplicationRunner.java:210)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.executeLocalJobs(JobLauncherApplicationRunner.java:194)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.launchJobFromProperties(JobLauncherApplicationRunner.java:174)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.run(JobLauncherApplicationRunner.java:169)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.run(JobLauncherApplicationRunner.java:164)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:777)
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:767)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.example.analyse_comportement_spectateurs.AnalyseComportementSpectateursCan2025Application.main(AnalyseComportementSpectateursCan2025Application.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+2025-12-29 23:49:45 [restartedMain] DEBUG o.s.b.repeat.support.RepeatTemplate - Handling exception: java.lang.NoSuchMethodError, caused by: java.lang.NoSuchMethodError: java.time.LocalDateTime.<init>()
+2025-12-29 23:49:45 [restartedMain] DEBUG o.s.b.repeat.support.RepeatTemplate - Handling fatal exception explicitly (rethrowing first of 1): java.lang.NoSuchMethodError: java.time.LocalDateTime.<init>()
+2025-12-29 23:49:45 [restartedMain] DEBUG o.s.b.core.step.tasklet.TaskletStep - Applying contribution: [StepContribution: read=0, written=0, filtered=0, readSkips=0, writeSkips=0, processSkips=0, exitStatus=EXECUTING]
+2025-12-29 23:49:45 [restartedMain] DEBUG o.s.b.core.step.tasklet.TaskletStep - Rollback for Error: java.lang.NoSuchMethodError: java.time.LocalDateTime.<init>()
+2025-12-29 23:49:45 [restartedMain] DEBUG o.s.b.repeat.support.RepeatTemplate - Handling exception: java.lang.NoSuchMethodError, caused by: java.lang.NoSuchMethodError: java.time.LocalDateTime.<init>()
+2025-12-29 23:49:45 [restartedMain] DEBUG o.s.b.c.s.i.SimpleRetryExceptionHandler - Handled fatal exception
+2025-12-29 23:49:45 [restartedMain] DEBUG o.s.b.repeat.support.RepeatTemplate - Handling fatal exception explicitly (rethrowing first of 1): java.lang.NoSuchMethodError: java.time.LocalDateTime.<init>()
+2025-12-29 23:49:45 [restartedMain] ERROR o.s.batch.core.step.AbstractStep - Encountered an error executing step processXmlStep in job spectatorAnalysisJob
+java.lang.NoSuchMethodError: java.time.LocalDateTime.<init>()
+	at org.glassfish.jaxb.core.v2.ClassFactory.tryGetDeclaredConstructor(ClassFactory.java:117)
+	at org.glassfish.jaxb.core.v2.ClassFactory.create0(ClassFactory.java:78)
+	at org.glassfish.jaxb.runtime.v2.runtime.ClassBeanInfoImpl.createInstance(ClassBeanInfoImpl.java:255)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallingContext.createInstance(UnmarshallingContext.java:655)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.StructureLoader.startElement(StructureLoader.java:156)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallingContext._startElement(UnmarshallingContext.java:530)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallingContext.startElement(UnmarshallingContext.java:509)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.InterningXmlVisitor.startElement(InterningXmlVisitor.java:49)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.StAXEventConnector.handleStartElement(StAXEventConnector.java:228)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.StAXEventConnector.bridge(StAXEventConnector.java:95)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:421)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(UnmarshallerImpl.java:396)
+	at org.springframework.oxm.jaxb.Jaxb2Marshaller.unmarshalStaxSource(Jaxb2Marshaller.java:855)
+	at org.springframework.oxm.jaxb.Jaxb2Marshaller.unmarshal(Jaxb2Marshaller.java:804)
+	at org.springframework.oxm.jaxb.Jaxb2Marshaller.unmarshal(Jaxb2Marshaller.java:791)
+	at org.springframework.batch.item.xml.StaxEventItemReader.doRead(StaxEventItemReader.java:279)
+	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.read(AbstractItemCountingItemStreamItemReader.java:93)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.doRead(SimpleChunkProvider.java:108)
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProvider.read(FaultTolerantChunkProvider.java:86)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.lambda$provide$0(SimpleChunkProvider.java:132)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.provide(SimpleChunkProvider.java:127)
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:69)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:388)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:312)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:255)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:240)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:229)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:153)
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:418)
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:132)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:317)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:157)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:148)
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher.run(TaskExecutorJobLauncher.java:59)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.execute(JobLauncherApplicationRunner.java:210)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.executeLocalJobs(JobLauncherApplicationRunner.java:194)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.launchJobFromProperties(JobLauncherApplicationRunner.java:174)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.run(JobLauncherApplicationRunner.java:169)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.run(JobLauncherApplicationRunner.java:164)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:777)
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:767)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.example.analyse_comportement_spectateurs.AnalyseComportementSpectateursCan2025Application.main(AnalyseComportementSpectateursCan2025Application.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.NoSuchMethodException: java.time.LocalDateTime.<init>()
+	at java.base/java.lang.Class.getConstructor0(Class.java:3761)
+	at java.base/java.lang.Class.getDeclaredConstructor(Class.java:2930)
+	at org.glassfish.jaxb.core.v2.ClassFactory.tryGetDeclaredConstructor(ClassFactory.java:109)
+	... 65 common frames omitted
+2025-12-29 23:49:45 [restartedMain] INFO  o.s.batch.core.step.AbstractStep - Step: [processXmlStep] executed in 443ms
+2025-12-29 23:49:45 [restartedMain] DEBUG o.s.b.c.r.dao.JdbcStepExecutionDao - Truncating long message before update of StepExecution, original message is: java.lang.NoSuchMethodError: java.time.LocalDateTime.<init>()
+	at org.glassfish.jaxb.core.v2.ClassFactory.tryGetDeclaredConstructor(ClassFactory.java:117)
+	at org.glassfish.jaxb.core.v2.ClassFactory.create0(ClassFactory.java:78)
+	at org.glassfish.jaxb.runtime.v2.runtime.ClassBeanInfoImpl.createInstance(ClassBeanInfoImpl.java:255)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallingContext.createInstance(UnmarshallingContext.java:655)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.StructureLoader.startElement(StructureLoader.java:156)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallingContext._startElement(UnmarshallingContext.java:530)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallingContext.startElement(UnmarshallingContext.java:509)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.InterningXmlVisitor.startElement(InterningXmlVisitor.java:49)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.StAXEventConnector.handleStartElement(StAXEventConnector.java:228)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.StAXEventConnector.bridge(StAXEventConnector.java:95)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:421)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(UnmarshallerImpl.java:396)
+	at org.springframework.oxm.jaxb.Jaxb2Marshaller.unmarshalStaxSource(Jaxb2Marshaller.java:855)
+	at org.springframework.oxm.jaxb.Jaxb2Marshaller.unmarshal(Jaxb2Marshaller.java:804)
+	at org.springframework.oxm.jaxb.Jaxb2Marshaller.unmarshal(Jaxb2Marshaller.java:791)
+	at org.springframework.batch.item.xml.StaxEventItemReader.doRead(StaxEventItemReader.java:279)
+	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.read(AbstractItemCountingItemStreamItemReader.java:93)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.doRead(SimpleChunkProvider.java:108)
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProvider.read(FaultTolerantChunkProvider.java:86)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.lambda$provide$0(SimpleChunkProvider.java:132)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.provide(SimpleChunkProvider.java:127)
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:69)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:388)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:312)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:255)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:240)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:229)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:153)
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:418)
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:132)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:317)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:157)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:148)
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher.run(TaskExecutorJobLauncher.java:59)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.execute(JobLauncherApplicationRunner.java:210)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.executeLocalJobs(JobLauncherApplicationRunner.java:194)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.launchJobFromProperties(JobLauncherApplicationRunner.java:174)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.run(JobLauncherApplicationRunner.java:169)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.run(JobLauncherApplicationRunner.java:164)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:777)
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:767)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.example.analyse_comportement_spectateurs.AnalyseComportementSpectateursCan2025Application.main(AnalyseComportementSpectateursCan2025Application.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.NoSuchMethodException: java.time.LocalDateTime.<init>()
+	at java.base/java.lang.Class.getConstructor0(Class.java:3761)
+	at java.base/java.lang.Class.getDeclaredConstructor(Class.java:2930)
+	at org.glassfish.jaxb.core.v2.ClassFactory.tryGetDeclaredConstructor(ClassFactory.java:109)
+	... 65 more
+
+2025-12-29 23:49:45 [restartedMain] DEBUG o.s.batch.core.step.AbstractStep - Step execution complete: StepExecution: id=14, version=2, name=processXmlStep, status=FAILED, exitStatus=FAILED, readCount=0, filterCount=0, writeCount=0 readSkipCount=0, writeSkipCount=0, processSkipCount=0, commitCount=0, rollbackCount=1
+2025-12-29 23:49:45 [restartedMain] DEBUG o.s.batch.core.job.AbstractJob - Upgrading JobExecution status: StepExecution: id=14, version=2, name=processXmlStep, status=FAILED, exitStatus=FAILED, readCount=0, filterCount=0, writeCount=0 readSkipCount=0, writeSkipCount=0, processSkipCount=0, commitCount=0, rollbackCount=1, exitDescription=java.lang.NoSuchMethodError: java.time.LocalDateTime.<init>()
+	at org.glassfish.jaxb.core.v2.ClassFactory.tryGetDeclaredConstructor(ClassFactory.java:117)
+	at org.glassfish.jaxb.core.v2.ClassFactory.create0(ClassFactory.java:78)
+	at org.glassfish.jaxb.runtime.v2.runtime.ClassBeanInfoImpl.createInstance(ClassBeanInfoImpl.java:255)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallingContext.createInstance(UnmarshallingContext.java:655)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.StructureLoader.startElement(StructureLoader.java:156)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallingContext._startElement(UnmarshallingContext.java:530)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallingContext.startElement(UnmarshallingContext.java:509)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.InterningXmlVisitor.startElement(InterningXmlVisitor.java:49)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.StAXEventConnector.handleStartElement(StAXEventConnector.java:228)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.StAXEventConnector.bridge(StAXEventConnector.java:95)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:421)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(UnmarshallerImpl.java:396)
+	at org.springframework.oxm.jaxb.Jaxb2Marshaller.unmarshalStaxSource(Jaxb2Marshaller.java:855)
+	at org.springframework.oxm.jaxb.Jaxb2Marshaller.unmarshal(Jaxb2Marshaller.java:804)
+	at org.springframework.oxm.jaxb.Jaxb2Marshaller.unmarshal(Jaxb2Marshaller.java:791)
+	at org.springframework.batch.item.xml.StaxEventItemReader.doRead(StaxEventItemReader.java:279)
+	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.read(AbstractItemCountingItemStreamItemReader.java:93)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.doRead(SimpleChunkProvider.java:108)
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProvider.read(FaultTolerantChunkProvider.java:86)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.lambda$provide$0(SimpleChunkProvider.java:132)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.provide(SimpleChunkProvider.java:127)
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:69)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:388)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:312)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:255)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:240)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:229)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:153)
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:418)
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:132)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:317)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:157)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:148)
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher.run(TaskExecutorJobLauncher.java:59)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.execute(JobLauncherApplicationRunner.java:210)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.executeLocalJobs(JobLauncherApplicationRunner.java:194)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.launchJobFromProperties(JobLauncherApplicationRunner.java:174)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.run(JobLauncherApplicationRunner.java:169)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.run(JobLauncherApplicationRunner.java:164)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:777)
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:767)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.example.analyse_comportement_spectateurs.AnalyseComportementSpectateursCan2025Application.main(AnalyseComportementSpectateursCan2025Application.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.NoSuchMethodException: java.time.LocalDateTime.<init>()
+	at java.base/java.lang.Class.getConstructor0(Class.java:3761)
+	at java.base/java.lang.Class.getDeclaredConstructor(Class.java:2930)
+	at org.glassfish.jaxb.core.v2.ClassFactory.tryGetDeclaredConstructor(ClassFactory.java:109)
+	... 65 more
+
+2025-12-29 23:49:45 [restartedMain] DEBUG o.s.batch.core.job.AbstractJob - Job execution complete: JobExecution: id=13, version=1, startTime=2025-12-29T23:49:44.782934800, endTime=null, lastUpdated=2025-12-29T23:49:44.783941300, status=FAILED, exitStatus=exitCode=FAILED;exitDescription=java.lang.NoSuchMethodError: java.time.LocalDateTime.<init>()
+	at org.glassfish.jaxb.core.v2.ClassFactory.tryGetDeclaredConstructor(ClassFactory.java:117)
+	at org.glassfish.jaxb.core.v2.ClassFactory.create0(ClassFactory.java:78)
+	at org.glassfish.jaxb.runtime.v2.runtime.ClassBeanInfoImpl.createInstance(ClassBeanInfoImpl.java:255)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallingContext.createInstance(UnmarshallingContext.java:655)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.StructureLoader.startElement(StructureLoader.java:156)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallingContext._startElement(UnmarshallingContext.java:530)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallingContext.startElement(UnmarshallingContext.java:509)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.InterningXmlVisitor.startElement(InterningXmlVisitor.java:49)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.StAXEventConnector.handleStartElement(StAXEventConnector.java:228)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.StAXEventConnector.bridge(StAXEventConnector.java:95)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:421)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(UnmarshallerImpl.java:396)
+	at org.springframework.oxm.jaxb.Jaxb2Marshaller.unmarshalStaxSource(Jaxb2Marshaller.java:855)
+	at org.springframework.oxm.jaxb.Jaxb2Marshaller.unmarshal(Jaxb2Marshaller.java:804)
+	at org.springframework.oxm.jaxb.Jaxb2Marshaller.unmarshal(Jaxb2Marshaller.java:791)
+	at org.springframework.batch.item.xml.StaxEventItemReader.doRead(StaxEventItemReader.java:279)
+	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.read(AbstractItemCountingItemStreamItemReader.java:93)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.doRead(SimpleChunkProvider.java:108)
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProvider.read(FaultTolerantChunkProvider.java:86)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.lambda$provide$0(SimpleChunkProvider.java:132)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.provide(SimpleChunkProvider.java:127)
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:69)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:388)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:312)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:255)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:240)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:229)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:153)
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:418)
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:132)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:317)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:157)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:148)
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher.run(TaskExecutorJobLauncher.java:59)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.execute(JobLauncherApplicationRunner.java:210)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.executeLocalJobs(JobLauncherApplicationRunner.java:194)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.launchJobFromProperties(JobLauncherApplicationRunner.java:174)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.run(JobLauncherApplicationRunner.java:169)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.run(JobLauncherApplicationRunner.java:164)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:777)
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:767)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.example.analyse_comportement_spectateurs.AnalyseComportementSpectateursCan2025Application.main(AnalyseComportementSpectateursCan2025Application.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.NoSuchMethodException: java.time.LocalDateTime.<init>()
+	at java.base/java.lang.Class.getConstructor0(Class.java:3761)
+	at java.base/java.lang.Class.getDeclaredConstructor(Class.java:2930)
+	at org.glassfish.jaxb.core.v2.ClassFactory.tryGetDeclaredConstructor(ClassFactory.java:109)
+	... 65 more
+, job=[JobInstance: id=1, version=0, Job=[spectatorAnalysisJob]], jobParameters=[{}]
+2025-12-29 23:49:45 [restartedMain] DEBUG o.s.b.c.r.dao.JdbcJobExecutionDao - Truncating long message before update of JobExecution: JobExecution: id=13, version=1, startTime=2025-12-29T23:49:44.782934800, endTime=2025-12-29T23:49:45.309987600, lastUpdated=2025-12-29T23:49:45.311947700, status=FAILED, exitStatus=exitCode=FAILED;exitDescription=java.lang.NoSuchMethodError: java.time.LocalDateTime.<init>()
+	at org.glassfish.jaxb.core.v2.ClassFactory.tryGetDeclaredConstructor(ClassFactory.java:117)
+	at org.glassfish.jaxb.core.v2.ClassFactory.create0(ClassFactory.java:78)
+	at org.glassfish.jaxb.runtime.v2.runtime.ClassBeanInfoImpl.createInstance(ClassBeanInfoImpl.java:255)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallingContext.createInstance(UnmarshallingContext.java:655)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.StructureLoader.startElement(StructureLoader.java:156)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallingContext._startElement(UnmarshallingContext.java:530)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallingContext.startElement(UnmarshallingContext.java:509)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.InterningXmlVisitor.startElement(InterningXmlVisitor.java:49)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.StAXEventConnector.handleStartElement(StAXEventConnector.java:228)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.StAXEventConnector.bridge(StAXEventConnector.java:95)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:421)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(UnmarshallerImpl.java:396)
+	at org.springframework.oxm.jaxb.Jaxb2Marshaller.unmarshalStaxSource(Jaxb2Marshaller.java:855)
+	at org.springframework.oxm.jaxb.Jaxb2Marshaller.unmarshal(Jaxb2Marshaller.java:804)
+	at org.springframework.oxm.jaxb.Jaxb2Marshaller.unmarshal(Jaxb2Marshaller.java:791)
+	at org.springframework.batch.item.xml.StaxEventItemReader.doRead(StaxEventItemReader.java:279)
+	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.read(AbstractItemCountingItemStreamItemReader.java:93)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.doRead(SimpleChunkProvider.java:108)
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProvider.read(FaultTolerantChunkProvider.java:86)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.lambda$provide$0(SimpleChunkProvider.java:132)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.provide(SimpleChunkProvider.java:127)
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:69)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:388)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:312)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:255)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:240)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:229)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:153)
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:418)
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:132)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:317)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:157)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:148)
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher.run(TaskExecutorJobLauncher.java:59)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.execute(JobLauncherApplicationRunner.java:210)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.executeLocalJobs(JobLauncherApplicationRunner.java:194)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.launchJobFromProperties(JobLauncherApplicationRunner.java:174)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.run(JobLauncherApplicationRunner.java:169)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.run(JobLauncherApplicationRunner.java:164)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:777)
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:767)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.example.analyse_comportement_spectateurs.AnalyseComportementSpectateursCan2025Application.main(AnalyseComportementSpectateursCan2025Application.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.NoSuchMethodException: java.time.LocalDateTime.<init>()
+	at java.base/java.lang.Class.getConstructor0(Class.java:3761)
+	at java.base/java.lang.Class.getDeclaredConstructor(Class.java:2930)
+	at org.glassfish.jaxb.core.v2.ClassFactory.tryGetDeclaredConstructor(ClassFactory.java:109)
+	... 65 more
+, job=[JobInstance: id=1, version=0, Job=[spectatorAnalysisJob]], jobParameters=[{}]
+2025-12-29 23:49:45 [restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [SimpleJob: [name=spectatorAnalysisJob]] completed with the following parameters: [{}] and the following status: [FAILED] in 527ms
+2025-12-29 23:49:45 [SpringApplicationShutdownHook] WARN  o.s.b.f.s.DisposableBeanAdapter - Custom destroy method 'close' on bean with name 'jsonItemReader' propagated an exception: org.springframework.batch.item.ItemStreamException: Error while closing item reader
+2025-12-29 23:49:45 [SpringApplicationShutdownHook] DEBUG o.s.b.c.c.s.JobRegistryBeanPostProcessor - Unregistering job: spectatorAnalysisJob
+2025-12-29 23:49:45 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-29 23:49:45 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-29 23:49:45 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-29 23:53:55 [restartedMain] INFO  c.e.a.AnalyseComportementSpectateursCan2025Application - Starting AnalyseComportementSpectateursCan2025Application using Java 21.0.1 with PID 16768 (H:\apps\IdeaProjects\analyse_comportement_spectateurs\target\classes started by lenovo in H:\apps\IdeaProjects\analyse_comportement_spectateurs)
+2025-12-29 23:53:55 [restartedMain] INFO  c.e.a.AnalyseComportementSpectateursCan2025Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-29 23:53:55 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-29 23:53:56 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-29 23:53:56 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 110 ms. Found 3 JPA repository interfaces.
+2025-12-29 23:53:57 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:53:57 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:53:57 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$PooledDataSourceConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$PooledDataSourceConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:53:57 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jdbcConnectionDetails' of type [org.springframework.boot.autoconfigure.jdbc.PropertiesJdbcConnectionDetails] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:53:57 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:53:57 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.jpa-org.springframework.boot.autoconfigure.orm.jpa.JpaProperties' of type [org.springframework.boot.autoconfigure.orm.jpa.JpaProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:53:57 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.jpa.hibernate-org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties' of type [org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:53:57 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:53:57 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'hikariPoolDataSourceMetadataProvider' of type [org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration$$Lambda/0x0000018553359198] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:53:57 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration' of type [org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:53:57 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:53:57 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'transactionExecutionListeners' of type [org.springframework.boot.autoconfigure.transaction.ExecutionListenersTransactionManagerCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:53:57 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties' of type [org.springframework.boot.autoconfigure.transaction.TransactionProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:53:57 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'platformTransactionManagerCustomizers' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:53:57 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.sql.init.DataSourceInitializationConfiguration' of type [org.springframework.boot.autoconfigure.sql.init.DataSourceInitializationConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:53:57 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.sql.init-org.springframework.boot.autoconfigure.sql.init.SqlInitializationProperties' of type [org.springframework.boot.autoconfigure.sql.init.SqlInitializationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:53:57 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-29 23:53:57 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@34429d2c
+2025-12-29 23:53:57 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-29 23:53:57 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSourceScriptDatabaseInitializer' of type [org.springframework.boot.autoconfigure.sql.init.SqlDataSourceScriptDatabaseInitializer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:53:57 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$DataSourceInitializerConfiguration' of type [org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$DataSourceInitializerConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:53:57 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.batch-org.springframework.boot.autoconfigure.batch.BatchProperties' of type [org.springframework.boot.autoconfigure.batch.BatchProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:53:57 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'batchDataSourceInitializer' of type [org.springframework.boot.autoconfigure.batch.BatchDataSourceScriptDatabaseInitializer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:53:57 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration' of type [org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:53:57 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'inMemoryDatabaseShutdownExecutor' of type [org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration$NonEmbeddedInMemoryDatabaseShutdownExecutor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:53:57 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jpaVendorAdapter' of type [org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:53:57 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'entityManagerFactoryBuilder' of type [org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:53:57 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'persistenceManagedTypes' of type [org.springframework.orm.jpa.persistenceunit.SimplePersistenceManagedTypes] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:53:58 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-29 23:53:58 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-12-29 23:53:58 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-29 23:53:58 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-29 23:53:58 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-29 23:53:58 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-12-29 23:54:00 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-29 23:54:00 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-29 23:54:00 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'entityManagerFactory' of type [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:54:00 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'entityManagerFactory' of type [jdk.proxy4.$Proxy98] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:54:00 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'transactionManager' of type [org.springframework.orm.jpa.JpaTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-29 23:54:00 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration' of type [org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [jobRegistryBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-12-29 23:54:01 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-29 23:54:02 [restartedMain] DEBUG o.s.b.c.c.s.JobRegistryBeanPostProcessor - Registering job: spectatorAnalysisJob
+2025-12-29 23:54:02 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-29 23:54:02 [restartedMain] INFO  c.e.a.AnalyseComportementSpectateursCan2025Application - Started AnalyseComportementSpectateursCan2025Application in 8.475 seconds (process running for 10.453)
+2025-12-29 23:54:02 [restartedMain] INFO  o.s.b.a.b.JobLauncherApplicationRunner - Running default command line with: []
+2025-12-29 23:54:02 [restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [SimpleJob: [name=spectatorAnalysisJob]] launched with the following parameters: [{}]
+2025-12-29 23:54:02 [restartedMain] DEBUG o.s.batch.core.job.AbstractJob - Job execution starting: JobExecution: id=14, version=0, startTime=null, endTime=null, lastUpdated=2025-12-29T23:54:02.758662500, status=STARTING, exitStatus=exitCode=UNKNOWN;exitDescription=, job=[JobInstance: id=1, version=0, Job=[spectatorAnalysisJob]], jobParameters=[{}]
+2025-12-29 23:54:02 [restartedMain] INFO  o.s.batch.core.job.SimpleStepHandler - Step already complete or not restartable, so no action to execute: StepExecution: id=10, version=3, name=processJsonStep, status=COMPLETED, exitStatus=COMPLETED, readCount=0, filterCount=0, writeCount=0 readSkipCount=1, writeSkipCount=0, processSkipCount=0, commitCount=1, rollbackCount=0, exitDescription=
+2025-12-29 23:54:02 [restartedMain] INFO  o.s.batch.core.job.SimpleStepHandler - Executing step: [processXmlStep]
+2025-12-29 23:54:02 [restartedMain] DEBUG o.s.batch.core.step.AbstractStep - Executing: id=15
+2025-12-29 23:54:03 [restartedMain] DEBUG o.s.b.repeat.support.RepeatTemplate - Starting repeat context.
+2025-12-29 23:54:03 [restartedMain] DEBUG o.s.b.repeat.support.RepeatTemplate - Repeat operation about to start at count=1
+2025-12-29 23:54:03 [restartedMain] DEBUG o.s.b.c.s.c.StepContextRepeatCallback - Preparing chunk execution for StepContext: org.springframework.batch.core.scope.context.StepContext@48ddcddc
+2025-12-29 23:54:03 [restartedMain] DEBUG o.s.b.c.s.c.StepContextRepeatCallback - Chunk execution starting: queue size=0
+2025-12-29 23:54:03 [restartedMain] DEBUG o.s.b.repeat.support.RepeatTemplate - Starting repeat context.
+2025-12-29 23:54:03 [restartedMain] DEBUG o.s.b.repeat.support.RepeatTemplate - Repeat operation about to start at count=1
+2025-12-29 23:54:03 [restartedMain] DEBUG o.s.b.repeat.support.RepeatTemplate - Repeat operation about to start at count=2
+2025-12-29 23:54:03 [restartedMain] DEBUG o.s.b.repeat.support.RepeatTemplate - Repeat operation about to start at count=3
+2025-12-29 23:54:03 [restartedMain] DEBUG o.s.b.repeat.support.RepeatTemplate - Repeat operation about to start at count=4
+2025-12-29 23:54:03 [restartedMain] DEBUG o.s.b.repeat.support.RepeatTemplate - Repeat operation about to start at count=5
+2025-12-29 23:54:03 [restartedMain] DEBUG o.s.b.repeat.support.RepeatTemplate - Repeat operation about to start at count=6
+2025-12-29 23:54:03 [restartedMain] DEBUG o.s.b.repeat.support.RepeatTemplate - Repeat operation about to start at count=7
+2025-12-29 23:54:03 [restartedMain] DEBUG o.s.b.repeat.support.RepeatTemplate - Repeat operation about to start at count=8
+2025-12-29 23:54:03 [restartedMain] DEBUG o.s.b.repeat.support.RepeatTemplate - Repeat operation about to start at count=9
+2025-12-29 23:54:03 [restartedMain] DEBUG o.s.b.repeat.support.RepeatTemplate - Repeat is complete according to policy and result value.
+2025-12-29 23:54:03 [restartedMain] DEBUG org.hibernate.SQL - 
+    select
+        e1_0.id 
+    from
+        entries e1_0 
+    where
+        e1_0.ticket_number=? 
+    limit
+        ?
+2025-12-29 23:54:03 [restartedMain] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.spectator_id,
+        s1_0.age,
+        s1_0.category,
+        s1_0.nationality,
+        s1_0.total_matches 
+    from
+        spectators s1_0 
+    where
+        s1_0.spectator_id=?
+2025-12-29 23:54:03 [restartedMain] DEBUG org.hibernate.SQL - 
+    select
+        e1_0.id 
+    from
+        entries e1_0 
+    where
+        e1_0.ticket_number=? 
+    limit
+        ?
+2025-12-29 23:54:03 [restartedMain] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.spectator_id,
+        s1_0.age,
+        s1_0.category,
+        s1_0.nationality,
+        s1_0.total_matches 
+    from
+        spectators s1_0 
+    where
+        s1_0.spectator_id=?
+2025-12-29 23:54:03 [restartedMain] DEBUG org.hibernate.SQL - 
+    select
+        e1_0.id 
+    from
+        entries e1_0 
+    where
+        e1_0.ticket_number=? 
+    limit
+        ?
+2025-12-29 23:54:03 [restartedMain] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.spectator_id,
+        s1_0.age,
+        s1_0.category,
+        s1_0.nationality,
+        s1_0.total_matches 
+    from
+        spectators s1_0 
+    where
+        s1_0.spectator_id=?
+2025-12-29 23:54:03 [restartedMain] DEBUG org.hibernate.SQL - 
+    select
+        e1_0.id 
+    from
+        entries e1_0 
+    where
+        e1_0.ticket_number=? 
+    limit
+        ?
+2025-12-29 23:54:03 [restartedMain] DEBUG org.hibernate.SQL - 
+    update
+        spectators 
+    set
+        age=?,
+        category=?,
+        nationality=?,
+        total_matches=? 
+    where
+        spectator_id=?
+2025-12-29 23:54:03 [restartedMain] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.spectator_id,
+        s1_0.age,
+        s1_0.category,
+        s1_0.nationality,
+        s1_0.total_matches 
+    from
+        spectators s1_0 
+    where
+        s1_0.spectator_id=?
+2025-12-29 23:54:03 [restartedMain] DEBUG org.hibernate.SQL - 
+    select
+        e1_0.id 
+    from
+        entries e1_0 
+    where
+        e1_0.ticket_number=? 
+    limit
+        ?
+2025-12-29 23:54:03 [restartedMain] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.spectator_id,
+        s1_0.age,
+        s1_0.category,
+        s1_0.nationality,
+        s1_0.total_matches 
+    from
+        spectators s1_0 
+    where
+        s1_0.spectator_id=?
+2025-12-29 23:54:03 [restartedMain] DEBUG org.hibernate.SQL - 
+    select
+        e1_0.id 
+    from
+        entries e1_0 
+    where
+        e1_0.ticket_number=? 
+    limit
+        ?
+2025-12-29 23:54:03 [restartedMain] DEBUG org.hibernate.SQL - 
+    update
+        spectators 
+    set
+        age=?,
+        category=?,
+        nationality=?,
+        total_matches=? 
+    where
+        spectator_id=?
+2025-12-29 23:54:03 [restartedMain] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.spectator_id,
+        s1_0.age,
+        s1_0.category,
+        s1_0.nationality,
+        s1_0.total_matches 
+    from
+        spectators s1_0 
+    where
+        s1_0.spectator_id=?
+2025-12-29 23:54:03 [restartedMain] DEBUG org.hibernate.SQL - 
+    select
+        e1_0.id 
+    from
+        entries e1_0 
+    where
+        e1_0.ticket_number=? 
+    limit
+        ?
+2025-12-29 23:54:03 [restartedMain] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.spectator_id,
+        s1_0.age,
+        s1_0.category,
+        s1_0.nationality,
+        s1_0.total_matches 
+    from
+        spectators s1_0 
+    where
+        s1_0.spectator_id=?
+2025-12-29 23:54:03 [restartedMain] DEBUG org.hibernate.SQL - 
+    select
+        e1_0.id 
+    from
+        entries e1_0 
+    where
+        e1_0.ticket_number=? 
+    limit
+        ?
+2025-12-29 23:54:03 [restartedMain] DEBUG org.hibernate.SQL - 
+    update
+        spectators 
+    set
+        age=?,
+        category=?,
+        nationality=?,
+        total_matches=? 
+    where
+        spectator_id=?
+2025-12-29 23:54:03 [restartedMain] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.spectator_id,
+        s1_0.age,
+        s1_0.category,
+        s1_0.nationality,
+        s1_0.total_matches 
+    from
+        spectators s1_0 
+    where
+        s1_0.spectator_id=?
+2025-12-29 23:54:03 [restartedMain] DEBUG o.s.b.c.s.i.FaultTolerantChunkProcessor - Attempting to write: [items=[SpectatorEntryDto(spectatorId=SPX20007, matchId=MCH06, entryTime=2025-07-15T19:00, gate=Gate A1, ticketNumber=TK-20001-AGD, age=29, nationality=Maroc, ticketType=Standard, seatLocation=SeatLocationDto(tribune=Nord, bloc=A, rang=14, siege=25)), SpectatorEntryDto(spectatorId=SPX20008, matchId=MCH06, entryTime=2025-07-15T19:15, gate=Gate B2, ticketNumber=TK-20002-AGD, age=42, nationality=Cameroun, ticketType=VIP, seatLocation=SeatLocationDto(tribune=Est, bloc=C, rang=6, siege=14)), SpectatorEntryDto(spectatorId=SPX20001, matchId=MCH06, entryTime=2025-07-15T19:20, gate=Gate A2, ticketNumber=TK-20003-AGD, age=28, nationality=Maroc, ticketType=Premium, seatLocation=SeatLocationDto(tribune=Nord, bloc=A, rang=7, siege=10)), SpectatorEntryDto(spectatorId=SPX20009, matchId=MCH07, entryTime=2025-07-17T20:00, gate=Gate C1, ticketNumber=TK-20004-AGD, age=35, nationality=Nigeria, ticketType=Standard, seatLocation=SeatLocationDto(tribune=Ouest, bloc=D, rang=20, siege=18)), SpectatorEntryDto(spectatorId=SPX20001, matchId=MCH07, entryTime=2025-07-17T20:10, gate=Gate A1, ticketNumber=TK-20005-AGD, age=28, nationality=Maroc, ticketType=VIP, seatLocation=SeatLocationDto(tribune=Nord, bloc=A, rang=5, siege=8)), SpectatorEntryDto(spectatorId=SPX20010, matchId=MCH08, entryTime=2025-07-19T18:30, gate=Gate B1, ticketNumber=TK-20006-AGD, age=26, nationality=Ghana, ticketType=Economique, seatLocation=SeatLocationDto(tribune=Sud, bloc=B, rang=22, siege=28)), SpectatorEntryDto(spectatorId=SPX20002, matchId=MCH08, entryTime=2025-07-19T18:45, gate=Gate A3, ticketNumber=TK-20007-AGD, age=34, nationality=France, ticketType=VIP, seatLocation=SeatLocationDto(tribune=Est, bloc=C, rang=4, siege=16)), SpectatorEntryDto(spectatorId=SPX20001, matchId=MCH08, entryTime=2025-07-19T19:00, gate=Gate A1, ticketNumber=TK-20008-AGD, age=28, nationality=Maroc, ticketType=Premium, seatLocation=SeatLocationDto(tribune=Nord, bloc=A, rang=9, siege=14))], skips=[]]
+2025-12-29 23:54:03 [restartedMain] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.spectator_id,
+        s1_0.age,
+        s1_0.category,
+        s1_0.nationality,
+        s1_0.total_matches 
+    from
+        spectators s1_0 
+    where
+        s1_0.spectator_id=?
+2025-12-29 23:54:03 [restartedMain] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.spectator_id,
+        s1_0.age,
+        s1_0.category,
+        s1_0.nationality,
+        s1_0.total_matches 
+    from
+        spectators s1_0 
+    where
+        s1_0.spectator_id=?
+2025-12-29 23:54:03 [restartedMain] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.spectator_id,
+        s1_0.age,
+        s1_0.category,
+        s1_0.nationality,
+        s1_0.total_matches 
+    from
+        spectators s1_0 
+    where
+        s1_0.spectator_id=?
+2025-12-29 23:54:03 [restartedMain] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.spectator_id,
+        s1_0.age,
+        s1_0.category,
+        s1_0.nationality,
+        s1_0.total_matches 
+    from
+        spectators s1_0 
+    where
+        s1_0.spectator_id=?
+2025-12-29 23:54:03 [restartedMain] INFO  c.e.a.batch.writer.SpectatorWriter - Sauvegardé 8 spectateurs
+2025-12-29 23:54:03 [restartedMain] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        spectators
+        (age, category, nationality, total_matches, spectator_id) 
+    values
+        (?, ?, ?, ?, ?)
+2025-12-29 23:54:03 [restartedMain] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        spectators
+        (age, category, nationality, total_matches, spectator_id) 
+    values
+        (?, ?, ?, ?, ?)
+2025-12-29 23:54:03 [restartedMain] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        spectators
+        (age, category, nationality, total_matches, spectator_id) 
+    values
+        (?, ?, ?, ?, ?)
+2025-12-29 23:54:03 [restartedMain] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        spectators
+        (age, category, nationality, total_matches, spectator_id) 
+    values
+        (?, ?, ?, ?, ?)
+2025-12-29 23:54:03 [restartedMain] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        entries
+        (bloc, created_at, entry_time, gate, match_id, rang, siege, spectator_id, ticket_number, ticket_type, tribune) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-12-29 23:54:03 [restartedMain] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        entries
+        (bloc, created_at, entry_time, gate, match_id, rang, siege, spectator_id, ticket_number, ticket_type, tribune) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-12-29 23:54:03 [restartedMain] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        entries
+        (bloc, created_at, entry_time, gate, match_id, rang, siege, spectator_id, ticket_number, ticket_type, tribune) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-12-29 23:54:03 [restartedMain] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        entries
+        (bloc, created_at, entry_time, gate, match_id, rang, siege, spectator_id, ticket_number, ticket_type, tribune) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-12-29 23:54:03 [restartedMain] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        entries
+        (bloc, created_at, entry_time, gate, match_id, rang, siege, spectator_id, ticket_number, ticket_type, tribune) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-12-29 23:54:03 [restartedMain] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        entries
+        (bloc, created_at, entry_time, gate, match_id, rang, siege, spectator_id, ticket_number, ticket_type, tribune) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-12-29 23:54:03 [restartedMain] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        entries
+        (bloc, created_at, entry_time, gate, match_id, rang, siege, spectator_id, ticket_number, ticket_type, tribune) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-12-29 23:54:03 [restartedMain] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        entries
+        (bloc, created_at, entry_time, gate, match_id, rang, siege, spectator_id, ticket_number, ticket_type, tribune) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-12-29 23:54:03 [restartedMain] INFO  c.e.a.batch.writer.SpectatorWriter - Sauvegardé 8 entrées
+2025-12-29 23:54:03 [restartedMain] DEBUG o.s.b.c.s.item.ChunkOrientedTasklet - Inputs not busy, ended: true
+2025-12-29 23:54:03 [restartedMain] DEBUG o.s.b.core.step.tasklet.TaskletStep - Applying contribution: [StepContribution: read=8, written=8, filtered=0, readSkips=0, writeSkips=0, processSkips=0, exitStatus=EXECUTING]
+2025-12-29 23:54:03 [restartedMain] DEBUG o.s.b.core.step.tasklet.TaskletStep - Saving step execution before commit: StepExecution: id=15, version=1, name=processXmlStep, status=STARTED, exitStatus=EXECUTING, readCount=8, filterCount=0, writeCount=8 readSkipCount=0, writeSkipCount=0, processSkipCount=0, commitCount=1, rollbackCount=0, exitDescription=
+2025-12-29 23:54:03 [restartedMain] DEBUG org.hibernate.SQL - 
+    update
+        spectators 
+    set
+        age=?,
+        category=?,
+        nationality=?,
+        total_matches=? 
+    where
+        spectator_id=?
+2025-12-29 23:54:03 [restartedMain] DEBUG o.s.b.repeat.support.RepeatTemplate - Repeat is complete according to policy and result value.
+2025-12-29 23:54:03 [restartedMain] DEBUG o.s.batch.core.step.AbstractStep - Step execution success: id=15
+2025-12-29 23:54:03 [restartedMain] INFO  o.s.batch.core.step.AbstractStep - Step: [processXmlStep] executed in 888ms
+2025-12-29 23:54:03 [restartedMain] DEBUG o.s.batch.core.step.AbstractStep - Step execution complete: StepExecution: id=15, version=3, name=processXmlStep, status=COMPLETED, exitStatus=COMPLETED, readCount=8, filterCount=0, writeCount=8 readSkipCount=0, writeSkipCount=0, processSkipCount=0, commitCount=1, rollbackCount=0
+2025-12-29 23:54:03 [restartedMain] DEBUG o.s.batch.core.job.AbstractJob - Upgrading JobExecution status: StepExecution: id=15, version=3, name=processXmlStep, status=COMPLETED, exitStatus=COMPLETED, readCount=8, filterCount=0, writeCount=8 readSkipCount=0, writeSkipCount=0, processSkipCount=0, commitCount=1, rollbackCount=0, exitDescription=
+2025-12-29 23:54:03 [restartedMain] DEBUG o.s.batch.core.job.AbstractJob - Job execution complete: JobExecution: id=14, version=1, startTime=2025-12-29T23:54:02.815300100, endTime=null, lastUpdated=2025-12-29T23:54:02.817300, status=COMPLETED, exitStatus=exitCode=COMPLETED;exitDescription=, job=[JobInstance: id=1, version=0, Job=[spectatorAnalysisJob]], jobParameters=[{}]
+2025-12-29 23:54:03 [restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [SimpleJob: [name=spectatorAnalysisJob]] completed with the following parameters: [{}] and the following status: [COMPLETED] in 1s15ms
+2025-12-29 23:54:03 [SpringApplicationShutdownHook] WARN  o.s.b.f.s.DisposableBeanAdapter - Custom destroy method 'close' on bean with name 'jsonItemReader' propagated an exception: org.springframework.batch.item.ItemStreamException: Error while closing item reader
+2025-12-29 23:54:03 [SpringApplicationShutdownHook] DEBUG o.s.b.c.c.s.JobRegistryBeanPostProcessor - Unregistering job: spectatorAnalysisJob
+2025-12-29 23:54:03 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-29 23:54:03 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-29 23:54:03 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
