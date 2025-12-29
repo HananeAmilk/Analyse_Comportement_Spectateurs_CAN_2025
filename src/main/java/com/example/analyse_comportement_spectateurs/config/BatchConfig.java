@@ -80,13 +80,13 @@ public class BatchConfig {
                 .build();
     }
 
-    @Bean
-    public Job xmlJob() {
-        return new JobBuilder("xmlJob", jobRepository)
-                .incrementer(new RunIdIncrementer())
-                .start(processXmlStep())
-                .build();
-    }
+//    @Bean
+//    public Job xmlJob() {
+//        return new JobBuilder("xmlJob", jobRepository)
+//                .incrementer(new RunIdIncrementer())
+//                .start(processXmlStep())
+//                .build();
+//    }
 
 //    @Bean
 //    public Job spectatorAnalysisJob() {

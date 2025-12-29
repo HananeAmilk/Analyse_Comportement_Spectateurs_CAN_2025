@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spectators>
+    <spectatorEntry>
+        <spectatorId>SPX20007</spectatorId>
+        <matchId>MCH06</matchId>
+        <entryTime>2025-07-15T19:00:00</entryTime>
+        <gate>Gate A1</gate>
+        <ticketNumber>TK-20001-AGD</ticketNumber>
+        <age>29</age>
+        <nationality>Maroc</nationality>
+        <ticketType>Standard</ticketType>
+        <seatLocation>
+            <tribune>Nord</tribune>
+            <bloc>A</bloc>
+            <rang>14</rang>
+            <siege>25</siege>
+        </seatLocation>
+    </spectatorEntry>
+
+    <spectatorEntry>
+        <spectatorId>SPX20008</spectatorId>
+        <matchId>MCH06</matchId>
+        <entryTime>2025-07-15T19:15:00</entryTime>
+        <gate>Gate B2</gate>
+        <ticketNumber>TK-20002-AGD</ticketNumber>
+        <age>42</age>
+        <nationality>Cameroun</nationality>
+        <ticketType>VIP</ticketType>
+        <seatLocation>
+            <tribune>Est</tribune>
+            <bloc>C</bloc>
+            <rang>6</rang>
+            <siege>14</siege>
+        </seatLocation>
+    </spectatorEntry>
+
+    <spectatorEntry>
+        <spectatorId>SPX20001</spectatorId>
+        <matchId>MCH06</matchId>
+        <entryTime>2025-07-15T19:20:00</entryTime>
+        <gate>Gate A2</gate>
+        <ticketNumber>TK-20003-AGD</ticketNumber>
+        <age>28</age>
+        <nationality>Maroc</nationality>
+        <ticketType>Premium</ticketType>
+        <seatLocation>
+            <tribune>Nord</tribune>
+            <bloc>A</bloc>
+            <rang>7</rang>
+            <siege>10</siege>
+        </seatLocation>
+    </spectatorEntry>
+
+    <spectatorEntry>
+        <spectatorId>SPX20009</spectatorId>
+        <matchId>MCH07</matchId>
+        <entryTime>2025-07-17T20:00:00</entryTime>
+        <gate>Gate C1</gate>
+        <ticketNumber>TK-20004-AGD</ticketNumber>
+        <age>35</age>
+        <nationality>Nigeria</nationality>
+        <ticketType>Standard</ticketType>
+        <seatLocation>
+            <tribune>Ouest</tribune>
+            <bloc>D</bloc>
+            <rang>20</rang>
+            <siege>18</siege>
+        </seatLocation>
+    </spectatorEntry>
+
+    <spectatorEntry>
+        <spectatorId>SPX20001</spectatorId>
+        <matchId>MCH07</matchId>
+        <entryTime>2025-07-17T20:10:00</entryTime>
+        <gate>Gate A1</gate>
+        <ticketNumber>TK-20005-AGD</ticketNumber>
+        <age>28</age>
+        <nationality>Maroc</nationality>
+        <ticketType>VIP</ticketType>
+        <seatLocation>
+            <tribune>Nord</tribune>
+            <bloc>A</bloc>
+            <rang>5</rang>
+            <siege>8</siege>
+        </seatLocation>
+    </spectatorEntry>
+
+    <spectatorEntry>
+        <spectatorId>SPX20010</spectatorId>
+        <matchId>MCH08</matchId>
+        <entryTime>2025-07-19T18:30:00</entryTime>
+        <gate>Gate B1</gate>
+        <ticketNumber>TK-20006-AGD</ticketNumber>
+        <age>26</age>
+        <nationality>Ghana</nationality>
+        <ticketType>Economique</ticketType>
+        <seatLocation>
+            <tribune>Sud</tribune>
+            <bloc>B</bloc>
+            <rang>22</rang>
+            <siege>28</siege>
+        </seatLocation>
+    </spectatorEntry>
+
+    <spectatorEntry>
+        <spectatorId>SPX20002</spectatorId>
+        <matchId>MCH08</matchId>
+        <entryTime>2025-07-19T18:45:00</entryTime>
+        <gate>Gate A3</gate>
+        <ticketNumber>TK-20007-AGD</ticketNumber>
+        <age>34</age>
+        <nationality>France</nationality>
+        <ticketType>VIP</ticketType>
+        <seatLocation>
+            <tribune>Est</tribune>
+            <bloc>C</bloc>
+            <rang>4</rang>
+            <siege>16</siege>
+        </seatLocation>
+    </spectatorEntry>
+
+    <spectatorEntry>
+        <spectatorId>SPX20001</spectatorId>
+        <matchId>MCH08</matchId>
+        <entryTime>2025-07-19T19:00:00</entryTime>
+        <gate>Gate A1</gate>
+        <ticketNumber>TK-20008-AGD</ticketNumber>
+        <age>28</age>
+        <nationality>Maroc</nationality>
+        <ticketType>Premium</ticketType>
+        <seatLocation>
+            <tribune>Nord</tribune>
+            <bloc>A</bloc>
+            <rang>9</rang>
+            <siege>14</siege>
+        </seatLocation>
+    </spectatorEntry>
+</spectators>
