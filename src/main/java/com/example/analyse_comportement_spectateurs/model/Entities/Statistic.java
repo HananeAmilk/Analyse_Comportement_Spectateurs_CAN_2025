@@ -22,7 +22,7 @@ public class Statistic {
     @Column(name = "stat_name", unique = true, nullable = false, length = 100)
     private String statName;
 
-    @Column(name = "stat_value", nullable = false, length = 500)
+    @Column(name = "stat_value", nullable = false, columnDefinition = "TEXT")
     private String statValue;
 
     @Column(name = "stat_type", nullable = false, length = 50)

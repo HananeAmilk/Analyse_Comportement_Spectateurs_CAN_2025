@@ -273,8 +273,10 @@ public class StatisticService {
             logger.debug("Statistique sauvegardée: {}", name);
 
         } catch (Exception e) {
-            logger.error("Erreur lors de la sauvegarde de {}: {}", name, e.getMessage());
+            logger.error("Erreur lors de la sauvegarde de {}: {}", name, e.getMessage(), e);
+            throw e; // stoppe tout
         }
+
     }
 
     /**

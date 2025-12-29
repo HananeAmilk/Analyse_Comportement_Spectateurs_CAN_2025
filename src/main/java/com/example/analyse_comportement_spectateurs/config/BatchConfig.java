@@ -1,5 +1,6 @@
 package com.example.analyse_comportement_spectateurs.config;
 
+import com.example.analyse_comportement_spectateurs.batch.listener.StatisticJobListener;
 import com.example.analyse_comportement_spectateurs.batch.reader.JsonSpectatorReader;
 import com.example.analyse_comportement_spectateurs.batch.reader.XmlSpectatorReader;
 import com.example.analyse_comportement_spectateurs.model.Dtos.SpectatorEntryDto;
@@ -43,6 +44,9 @@ public class BatchConfig {
 
     @Autowired
     private SpectatorWriter writer;
+
+    @Autowired
+    private StatisticJobListener statisticJobListener;
 
     @Bean
     public Step processJsonStep() {
@@ -94,6 +98,7 @@ public class BatchConfig {
                 .incrementer(new RunIdIncrementer())
                 .start(processJsonStep())
                 .next(processXmlStep())
+                .listener(statisticJobListener)
                 .build();
     }
 }
