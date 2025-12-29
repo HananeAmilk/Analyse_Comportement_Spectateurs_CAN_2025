@@ -29,7 +29,7 @@ public interface SpectatorRepository extends JpaRepository<Spectator, Long> {
     /**
      * Trouve les spectateurs par catégorie comportementale
      */
-    List<Spectator> findByBehavioralCategory(String category);
+    List<Spectator> findByCategory(String category);
 
     /**
      * Top N spectateurs les plus actifs
