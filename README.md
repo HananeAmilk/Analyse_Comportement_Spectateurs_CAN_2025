@@ -1,5 +1,11 @@
 # Analyse du Comportement des Spectateurs - CAN 2025
 
+## 👥 Auteurs
+
+- **Équipe de développement** - Amilk Hanane - Oulaarif Nouhaila
+- **Encadrant** : M. El yaakoubi
+
+
 ## 📋 Description du Projet
 
 Application Spring Batch développée pour analyser le comportement des spectateurs lors de la Coupe d'Afrique des Nations 2025 organisée au Maroc. Le système traite les données collectées par différents systèmes techniques (portiques électroniques et systèmes d'information) aux formats JSON et XML.
@@ -12,7 +18,7 @@ Application Spring Batch développée pour analyser le comportement des spectate
 - Classifier les spectateurs selon leur fréquence de participation
 - Persister les données dans une base relationnelle
 
-## 🏗️ Architecture
+## 🏗️ Architecture Générale
 
 ### Composants Spring Batch
 
@@ -23,8 +29,7 @@ Application Spring Batch développée pour analyser le comportement des spectate
 #### 2. Processor
 Effectue les traitements suivants :
 - Validation des champs obligatoires et formats
-- Décomposition de la localisation des sièges
-- Calcul du nombre de matchs par spectateur
+- Creation des objets Entry et Spectator
 - Classification comportementale
 
 #### 3. Writer
@@ -102,10 +107,9 @@ Le système génère automatiquement les statistiques suivantes :
 ## 🛠️ Technologies Utilisées
 
 - **Java** 17+
-- **Spring Boot** 3.x
-- **Spring Batch** 5.x
+- **Spring Boot** 3.2
 - **Spring Data JPA**
-- **Base de données** : MySQL/PostgreSQL
+- **Base de données** : MySQL
 - **Maven** : Gestion des dépendances
 - **Lombok** : Réduction du code boilerplate
 
@@ -113,167 +117,85 @@ Le système génère automatiquement les statistiques suivantes :
 
 - JDK 17 ou supérieur
 - Maven 3.8+
-- MySQL 8.0+ ou PostgreSQL 13+
+- MySQL 8.0+ 
 - IDE (IntelliJ IDEA, Eclipse, VS Code)
-
-## ⚙️ Installation
-
-### 1. Cloner le projet
-```bash
-git clone https://github.com/votre-repo/can2025-spectator-analysis.git
-cd can2025-spectator-analysis
-```
-
-### 2. Configuration de la base de données
-
-Modifier le fichier `application.properties` :
-
-```properties
-# Database Configuration
-spring.datasource.url=jdbc:mysql://localhost:3306/can2025_db
-spring.datasource.username=votre_username
-spring.datasource.password=votre_password
-spring.jpa.hibernate.ddl-auto=update
-
-# Spring Batch Configuration
-spring.batch.jdbc.initialize-schema=always
-spring.batch.job.enabled=false
-```
-
-### 3. Créer la base de données
-```sql
-CREATE DATABASE can2025_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-```
-
-### 4. Compiler le projet
-```bash
-mvn clean install
-```
-
-## 🚀 Exécution
-
-### Lancer le traitement batch
-```bash
-mvn spring-boot:run
-```
-
-### Ou avec un JAR
-```bash
-java -jar target/can2025-spectator-analysis-1.0.0.jar
-```
-
-### Paramètres d'exécution
-```bash
-java -jar target/can2025-spectator-analysis-1.0.0.jar \
-  --input.json.path=/path/to/json/files \
-  --input.xml.path=/path/to/xml/files
-```
 
 ## 📂 Structure du Projet
 
 ```
-src/main/java
-├── com.ensa.can2025
-│   ├── config
-│   │   ├── BatchConfiguration.java
-│   │   ├── DatabaseConfiguration.java
-│   │   └── JsonXmlConfiguration.java
-│   ├── model
-│   │   ├── SpectatorEntry.java
-│   │   ├── SeatLocation.java
-│   │   └── SpectatorStatistics.java
-│   ├── entity
-│   │   ├── Spectator.java
-│   │   ├── Entry.java
-│   │   └── Statistics.java
-│   ├── reader
-│   │   ├── JsonSpectatorReader.java
-│   │   └── XmlSpectatorReader.java
-│   ├── processor
-│   │   └── SpectatorDataProcessor.java
-│   ├── writer
-│   │   └── SpectatorDatabaseWriter.java
-│   ├── validator
-│   │   └── SpectatorDataValidator.java
-│   └── repository
-│       ├── SpectatorRepository.java
-│       ├── EntryRepository.java
-│       └── StatisticsRepository.java
+analyse_comportement_spectateurs/
+│
+├── src/
+│   └── main/
+│       ├── java/com/example/analyse_comportement_spectateurs/
+│       │   ├── batch/
+│       │   │   ├── adapter/
+│       │   │   │   └── LocalDateTimeAdapter.java
+│       │   │   ├── listener/
+│       │   │   │   └── StatisticJobListener.java
+│       │   │   ├── processor/
+│       │   │   │   └── SpectatorProcessor.java
+│       │   │   ├── reader/
+│       │   │   │   ├── JsonSpectatorReader.java
+│       │   │   │   └── XmlSpectatorReader.java
+│       │   │   ├── validator/
+│       │   │   │   └── SpectatorValidator.java
+│       │   │   └── writer/
+│       │   │       └── SpectatorWriter.java
+│       │   │
+│       │   ├── config/
+│       │   │   └── BatchConfig.java
+│       │   │
+│       │   ├── model/
+│       │   │   ├── Dtos/
+│       │   │   │   ├── SeatLocationDto.java
+│       │   │   │   └── SpectatorEntryDto.java
+│       │   │   └── Entities/
+│       │   │       ├── Entry.java
+│       │   │       ├── Spectator.java
+│       │   │       └── Statistic.java
+│       │   │
+│       │   ├── repositories/
+│       │   │   ├── EntryRepository.java
+│       │   │   ├── SpectatorRepository.java
+│       │   │   └── StatisticRepository.java
+│       │   │
+│       │   └── service/
+│       │       ├── StatisticService.java
+│       │       └── AnalyseComportementSpectateurs2025Application.java
+│       │
+│       └── resources/
+│           ├── Data/
+│           │   ├── spectators.json
+│           │   ├── spectators.xml
+│           │   ├── application.properties
+│           │   └── schema.sql
+│           │
+│           └── (fichiers de configuration)
+│
+└── test/
+    ├── java/com/example/analyse_comportement_spectateurs/
+    │   └── batch/
+    │       ├── BatchIntegrationTest.java
+    │       ├── SpectatorProcessorTest.java
+    │       └── SpectatorValidatorTest.java
+    │
+    ├── resources/data/
+    │   ├── spectators.json
+    │   └── spectators.xml
+    │
+    └── AnalyseComportementSpectateurs2025ApplicationTests.java
+│
+├── .env
+├── .gitattributes
+├── .gitignore
+├── LICENSE
+├── README.md
+├── mvnw
+├── mvnw.cmd
+└── pom.xml
 ```
 
-## 🗄️ Schéma de Base de Données
-
-### Table `spectators`
-```sql
-CREATE TABLE spectators (
-    id BIGINT AUTO_INCREMENT PRIMARY KEY,
-    spectator_id VARCHAR(50) UNIQUE NOT NULL,
-    age INT,
-    nationality VARCHAR(100),
-    total_matches INT DEFAULT 0,
-    category VARCHAR(50),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-```
-
-### Table `entries`
-```sql
-CREATE TABLE entries (
-    id BIGINT AUTO_INCREMENT PRIMARY KEY,
-    spectator_id VARCHAR(50) NOT NULL,
-    match_id VARCHAR(50) NOT NULL,
-    entry_time TIMESTAMP NOT NULL,
-    gate VARCHAR(50),
-    ticket_number VARCHAR(100),
-    ticket_type VARCHAR(50),
-    tribune VARCHAR(50),
-    bloc VARCHAR(10),
-    rang INT,
-    siege INT,
-    FOREIGN KEY (spectator_id) REFERENCES spectators(spectator_id)
-);
-```
-
-### Table `statistics`
-```sql
-CREATE TABLE statistics (
-    id BIGINT AUTO_INCREMENT PRIMARY KEY,
-    metric_name VARCHAR(100) NOT NULL,
-    metric_value VARCHAR(255),
-    category VARCHAR(100),
-    calculated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-```
-
-## 🧪 Tests
-
-### Lancer les tests unitaires
-```bash
-mvn test
-```
-
-### Lancer les tests d'intégration
-```bash
-mvn verify
-```
-
-## 📝 Fichiers de Test
-
-Le projet inclut des jeux de données de test dans le dossier `src/test/resources` :
-
-- `test-data.json` : Exemples de données JSON
-- `test-data.xml` : Exemples de données XML
-
-## 📊 Monitoring
-
-Le système génère des logs détaillés :
-
-```properties
-# Logging Configuration
-logging.level.com.ensa.can2025=DEBUG
-logging.level.org.springframework.batch=INFO
-logging.file.name=logs/can2025-batch.log
-```
 
 ## 🤝 Contribution
 
@@ -284,11 +206,6 @@ Les contributions sont les bienvenues ! Pour contribuer :
 3. Commit les changements (`git commit -m 'Ajout de fonctionnalité'`)
 4. Push vers la branche (`git push origin feature/amelioration`)
 5. Ouvrir une Pull Request
-
-## 👥 Auteurs
-
-- **Équipe de développement** - Amilk Hanane - Oulaarif Nouhaila
-- **Encadrant** : M. El yaakoubi
 
 
 ---
